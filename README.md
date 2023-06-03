@@ -12,6 +12,7 @@
 ## 1. Resources
 
 If you're just getting started and want to learn the necessary tools going into this project, check out [resources.md](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/resources.md)!
+https://huggingface.co/
 
 ## 2. Getting Started
 
