@@ -43,16 +43,14 @@ if clicked:
     st.success("Data processed successfully! Here's your personality type: " + labels[prediction])
 
 
-personality_type = ["intj", 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp','istj', 'isfj', 'estj', 'esfj', 'istp', 'isfp', 'estp', 'esfp']
-sample_prob = np.array([0.05, 0.05, 0.2, 0.1, 0.4, 0.99, 0.07, 0.4, 0.3, 0.2, 0.1, 0.65, 0.9, 0.7, 0.7, 0.1])
+    print(scaled)
+    df = pd.DataFrame()
+    scaled = scaled[0].detach().numpy()
+    df["type"] = labels
+    df["prob"] = scaled
 
-df = pd.DataFrame()
-df["type"] = personality_type
-df["prob"] = sample_prob
+    st.bar_chart(df, x="type", y="prob")
 
-st.bar_chart(df, x="type", y="prob")
-
-# st.bar_chart(sample_prob, x = personality_type)
 
 num_epochs = ["1", "2", "3", "4"]
 loss = np.array([5, 2.1, 1.5, 0.3])
