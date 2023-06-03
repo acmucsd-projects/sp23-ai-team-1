@@ -4,7 +4,7 @@
 [![Made with Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-F3f0f0?&logo=Jupyter&labelColor=F3f0f0)](https://jupyter.org/try)
 [![Python](https://img.shields.io/badge/Python-3.11.0-21455f?logo=python&labelColor=21455f)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-2.0.0-150458?logo=pandas&labelColor=150458)](https://pandas.pydata.org/pandas-docs/stable/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?labelColor=blue)](https://raw.githubusercontent.com/alckasoc/Joblisting-Webscraper/main/LICENSE)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?labelColor=blue)]([https://raw.githubusercontent.com/alckasoc/Joblisting-Webscraper/main/LICENSE](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/LICENSE))
 
 
 ## Table of Contents:
