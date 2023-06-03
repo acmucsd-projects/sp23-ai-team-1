@@ -6,13 +6,13 @@
 - [1. Resources](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-resources)
 - [2. Getting Started](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-getting-started)
 - [3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)
-- [4. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-difficulties)
-- [5. Author Info](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-author-info)
+- [4. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)
+- [5. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)
+- [6. Author Info](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#6-author-info)
 
 ## 1. Resources
 
 If you're just getting started and want to learn the necessary tools going into this project, check out [resources.md](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/resources.md)!
-https://huggingface.co/
 
 ## 2. Getting Started
 
@@ -22,11 +22,15 @@ https://huggingface.co/
 
 [Insert some text on the structure of this repo and how everything is organized.]
 
-## 4. Difficulties
+## 4. Requirements for Use
+
+add later
+
+## 5. Difficulties
 
 [Insert some text on the difficulties you faced and how you solved them (images and GIFs are awesome).]
 
-## 5. Author Info
+## 6. Author Info
 
 [Insert your info]
 
