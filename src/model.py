@@ -18,12 +18,12 @@ class ClassifierHead(nn.Module):
 class BERTWithClassifierHead(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
-        self.backbone = AutoModel.from_pretrained("bert-base-uncased")
+        self.bert = AutoModel.from_pretrained("bert-base-uncased")
         # ClassifierHead is already defined.
-        self.classifier_head = ClassifierHead(20, num_classes, 500)
+        self.classifier = ClassifierHead(20, num_classes, 500)
         
     def forward(self, x):
-        x = self.backbone(**x)
+        x = self.bert(**x)
         x = x.last_hidden_state
-        x = self.classifier_head(x)
+        x = self.classifier(x)
         return x
