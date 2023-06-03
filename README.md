@@ -1,3 +1,4 @@
+![](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/MBTI_Predictor.png)
 # MBTI Classification from Tweets
 
 [If possible, insert some sort of preview or teaser to reel in your audience!]
