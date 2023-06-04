@@ -12,13 +12,31 @@ from torch import nn
 # python -m streamlit run app.py
 # streamlit run app.py
 
+st.set_page_config(
+    page_title="Welcome to our app!"
+)
+
+st.sidebar.header("Our Model")
+
 st.title("ACM AI Projects- Spring '23- Team 1")
 
-text = st.text_area("Input")
+st.sidebar.success("Want to learn more about our project?")
+
+st.markdown(
+    """
+    The MBTI Personality Test is a popular test used to determine someone's 
+    personality based on their answers to a number of questions. We have used a 
+    dataset which determines one's personality based on their tweets and built a 
+    neural network to train our model with this data and allow any user to input 
+    their tweets for our model to give an output of their MBTI personality. 
+    
+    Feel free to try different input tweets and play around with the model! 
+    """
+)
+
+text = st.text_area("Input tweet")
 
 clicked = st.button('Generate MBTI Personality')
-
-labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj', 'isfj', 'estj', 'esfj', 'istp', 'isfp', 'estp', 'esfp']   
 
 @st.cache_resource
 def load_model():
@@ -43,17 +61,11 @@ if clicked:
     st.success("Data processed successfully! Here's your personality type: " + labels[prediction])
 
 
-    print(scaled)
+    labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj', 'isfj', 'estj', 'esfj', 'istp', 'isfp', 'estp', 'esfp']   
     df = pd.DataFrame()
     scaled = scaled[0].detach().numpy()
     df["type"] = labels
     df["prob"] = scaled
 
     st.bar_chart(df, x="type", y="prob")
-
-
-num_epochs = ["1", "2", "3", "4"]
-loss = np.array([5, 2.1, 1.5, 0.3])
-
-# personality = "estj"
-# st.error("Error in processing data. Please try again.")
+    st.balloons()
