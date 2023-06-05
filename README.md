@@ -8,16 +8,16 @@
 
 
 ## Table of Contents:
-- [1. Resources](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-resources)
+- [1. Background](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background)
 - [2. Getting Started](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-getting-started)
 - [3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)
 - [4. Requirements for Use](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)
 - [5. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)
 - [6. Author Info](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#6-author-info)
 
-## 1. Resources
+## 1. Background
 
-If you're just getting started and want to learn the necessary tools going into this project, check out [resources.md](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/resources.md)!
+If you're just getting started and want to learn the necessary tools going into this project, check out [resources.md](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/background.md)!
 
 ## 2. Getting Started
 
