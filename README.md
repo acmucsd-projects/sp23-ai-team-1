@@ -17,13 +17,15 @@
 
 ## 1. Background
 
-If you're just getting started and want to learn the necessary tools going into this project, check out [resources.md](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/background.md)!
+MBTI, or Myers-Briggs Type Indicator, is a way to classy different personality types based on four categories: introversion(I)/extraversion(E), sensing(S)/intuition(N), thinking(T)/feeling(F), and judging(J)/perceiving(P). Every person has a combination of four letters that determines their personality types, and there are a total of 16 personality types. Although the MBTI tests are not known to be accurate and are mainly taken just for fun, we wanted to create a model that can predict a person’s MBTI based on their tweets.
 
 ## 2. Getting Started
 
 This is a project using NLP to classify a person's MBTI based on the tweets.
 
 Our Dataset: [MBTI Personality Type Twitter Dataset](https://www.kaggle.com/datasets/mazlumi/mbti-personality-type-twitter-dataset)
+
+If you're just getting started and want to learn the necessary tools going into this project, check out [resources.md](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/resources.md)!
 
 ## 3. Structure
 
