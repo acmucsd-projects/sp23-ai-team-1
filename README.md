@@ -1,4 +1,5 @@
 ![](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/MBTI_Predictor.png)
+(click the picture to access our website!)
 # MBTI Classification from Tweets
 
 [![Made with Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-F3f0f0?&logo=Jupyter&labelColor=F3f0f0)](https://jupyter.org/try)
@@ -44,6 +45,7 @@ Note: the package versions listed in requirements.txt and imported in the code m
 * cleantext
 * textblob
 * transformers
+* (to add)
 
 ## 5. Technologies Used
 
