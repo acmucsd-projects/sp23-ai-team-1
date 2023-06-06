@@ -61,7 +61,7 @@ def load_model():
     tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
     model = BERTWithClassifierHead(num_classes=16)
     path = os.path.dirname(__file__)
-    my_file3 = path+'/mbti.pth'
+    my_file3 = path+'/mbti.pth'    
     model.load_state_dict(torch.load(my_file3, map_location=torch.device('cpu')))
     return model, tokenizer
 
