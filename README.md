@@ -9,7 +9,7 @@
 
 
 ## Table of Contents:
-[1. Background](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background)
+[1. Background and Motivation](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background-and-motivation)
 [2. Dataset](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-dataset)
 [3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)
 [4. Requirements for Use](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)
@@ -17,9 +17,9 @@
 [6. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)
 [7. Author Info](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#6-author-info)
 
-## 1. Background
+## 1. Background and Motivation
 
-MBTI, or Myers-Briggs Type Indicator, is a way to classy different personality types based on four categories: introversion(I)/extraversion(E), sensing(S)/intuition(N), thinking(T)/feeling(F), and judging(J)/perceiving(P). Every person has a combination of four letters that determines their personality types, and there are a total of 16 personality types. Although the MBTI tests are not known to be accurate and are mainly taken just for fun, we wanted to create a model that can predict a person’s MBTI based on their tweets.
+MBTI, or Myers-Briggs Type Indicator, is a way to classy different personality types based on four categories: introversion(I)/extraversion(E), sensing(S)/intuition(N), thinking(T)/feeling(F), and judging(J)/perceiving(P). Every person has a combination of four letters that determines their personality types, and there are a total of 16 personality types. The [MBTI test](https://www.16personalities.com) usually takes at least 10 to 15 minutes to complete. Due to the the long and tedious process that it takes to finish the test, we wanted to create something that can determine someone's personality in a much quicker manner. As a result, we decided to create a model that can predict a person’s MBTI based on their tweets. This process takes just a fraction of the time as compared to the original MBTI test, which allows users to figure out their personality more efficiently. 
 
 ## 2. Dataset
 
@@ -59,7 +59,7 @@ Since our project requires us to analyze tweets, the text in our dataset include
 We also realized that some of the tweets weren’t in English. This created problems with how we were tokenizing the text, so we had to decide between translating all of the non-English tweets into English, or deleting all of the non-English tweets. After we plotted the distribution of the language that all the tweets are in, we saw that the vast majority of the tweets are in English. As a result, we thought it would be best to remove all of the non-English tweets from our dataset.
 
 <p align="center">
-  <img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/Language_Distribution.png">
+  <img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/Language_Distribution.png"><br>
   <i>Distribution of Languages</i>
 </p>
 
