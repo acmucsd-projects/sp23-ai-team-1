@@ -26,7 +26,7 @@ st.sidebar.success("Want to learn more about our project?")
 
 print(os.getcwd())
 
-image1 = Image.open('./mbti1.jpg')
+image1 = Image.open('mbti1.jpg')
 
 st.markdown(
     """
@@ -82,7 +82,7 @@ if clicked:
     df["type"] = labels
     df["prob"] = scaled
 
-    image2 = Image.open('./mbti2.jpeg')
+    image2 = Image.open('mbti2.jpeg')
 
     st.image(image2, caption='What your personality means')
 
