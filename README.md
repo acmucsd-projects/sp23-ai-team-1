@@ -59,7 +59,8 @@ Since our project requires us to analyze tweets, the text in our dataset include
 We also realized that some of the tweets weren’t in English. This created problems with how we were tokenizing the text, so we had to decide between translating all of the non-English tweets into English, or deleting all of the non-English tweets. After we plotted the distribution of the language that all the tweets are in, we saw that the vast majority of the tweets are in English. As a result, we thought it would be best to remove all of the non-English tweets from our dataset.
 
 <p align="center">
-  <img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/Language_Distribution.png" alt="Distribution of Languages"/>
+  <img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/Language_Distribution.png">
+  <i>Distribution of Languages</i>
 </p>
 
 Another hurdle we faced was figuring out how to train our model. We had trouble improving the accuracy of our model, and it took many hours before we achieved a low enough accuracy for our output. We were able to fix this problem by modifying our model and testing our various other models until we were satisfied with our results.
