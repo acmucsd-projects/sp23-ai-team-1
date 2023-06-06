@@ -11,14 +11,13 @@ from model import BERTWithClassifierHead
 # python -m streamlit run app.py
 # streamlit run app.py
 
+st.set_page_config(page_icon="🏠")
 st.sidebar.header("Our Model")
-
-st.title("ACM AI Projects- Spring '23- Team 1")
-
 st.sidebar.success("Want to learn more about our project?")
 
 image1 = Image.open('./img/mbti1.jpg')
 
+st.title("ACM AI Projects- Spring '23- Team 1")
 st.markdown(
     """
     The MBTI Personality Test is a popular test used to determine someone's 
