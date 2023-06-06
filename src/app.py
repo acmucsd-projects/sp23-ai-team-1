@@ -6,6 +6,7 @@ import torch
 from model import BERTWithClassifierHead
 from transformers import BertTokenizerFast
 from torch import nn
+from PIL import Image
 
 
 # RUN THE FILE- 
@@ -22,6 +23,8 @@ st.title("ACM AI Projects- Spring '23- Team 1")
 
 st.sidebar.success("Want to learn more about our project?")
 
+image1 = Image.open('./mbti1.jpg')
+
 st.markdown(
     """
     The MBTI Personality Test is a popular test used to determine someone's 
@@ -34,9 +37,19 @@ st.markdown(
     """
 )
 
+st.image(image1)
+
+st.markdown(
+    """
+    ### Test Our Model
+    """
+)
 text = st.text_area("Input tweet")
 
 clicked = st.button('Generate MBTI Personality')
+
+labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj', 'isfj', 'estj', 'esfj', 'istp', 'isfp', 'estp', 'esfp']   
+
 
 @st.cache_resource
 def load_model():
@@ -61,11 +74,14 @@ if clicked:
     st.success("Data processed successfully! Here's your personality type: " + labels[prediction])
 
 
-    labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj', 'isfj', 'estj', 'esfj', 'istp', 'isfp', 'estp', 'esfp']   
     df = pd.DataFrame()
     scaled = scaled[0].detach().numpy()
     df["type"] = labels
     df["prob"] = scaled
+
+    image2 = Image.open('./mbti2.jpeg')
+
+    st.image(image2, caption='What your personality means')
 
     st.bar_chart(df, x="type", y="prob")
     st.balloons()
