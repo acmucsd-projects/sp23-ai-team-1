@@ -7,6 +7,7 @@ from model import BERTWithClassifierHead
 from transformers import BertTokenizerFast
 from torch import nn
 from PIL import Image
+import os
 
 
 # RUN THE FILE- 
@@ -22,6 +23,8 @@ st.sidebar.header("Our Model")
 st.title("ACM AI Projects- Spring '23- Team 1")
 
 st.sidebar.success("Want to learn more about our project?")
+
+print(os.getcwd())
 
 image1 = Image.open('./mbti1.jpg')
 
