@@ -9,12 +9,12 @@
 
 
 ## Table of Contents:
-[1. Background and Motivation](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background-and-motivation)
-[2. Dataset](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-dataset)
-[3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)
-[4. Requirements for Use](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)
-[5. Technologies Used](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-technologies-used)
-[6. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)
+[1. Background and Motivation](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background-and-motivation)<br />
+[2. Dataset](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-dataset)<br />
+[3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)<br />
+[4. Requirements for Use](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)<br />
+[5. Technologies Used](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-technologies-used)<br />
+[6. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)<br />
 [7. Author Info](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#6-author-info)
 
 ## 1. Background and Motivation
