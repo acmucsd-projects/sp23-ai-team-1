@@ -84,7 +84,10 @@ if clicked:
     df["type"] = labels
     df["prob"] = scaled
 
-    image2 = Image.open('mbti2.jpeg')
+    
+    path = os.path.dirname(__file__)
+    my_file2 = path+'/mbti2.jpeg'
+    image2 = Image.open(my_file2)
 
     st.image(image2, caption='What your personality means')
 
