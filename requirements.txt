@@ -13,6 +13,5 @@ matplotlib>=3.7.*
 seaborn>=0.12.*
 gibberish-detector==0.0.1
 googletrans==3.1.0a0
-torchtext==0.15.0
 torchvision==0.15.0
 torchdata==0.6.1
