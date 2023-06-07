@@ -81,8 +81,9 @@ if clicked:
     scaled = scaled[0].detach().numpy()
     df["type"] = labels
     df["prob"] = scaled
-
-    image2 = Image.open('./img/mbti2.jpeg')
+    
+    mbti2 = path+'/img/mbti2.jpeg'
+    image2 = Image.open(mbti2)
 
     st.image(image2, caption='What your personality means')
 
