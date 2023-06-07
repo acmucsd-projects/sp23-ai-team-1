@@ -7,6 +7,7 @@ from model import BERTWithClassifierHead
 from transformers import BertTokenizerFast
 from torch import nn
 from PIL import Image
+import os
 
 
 # RUN THE FILE- 
