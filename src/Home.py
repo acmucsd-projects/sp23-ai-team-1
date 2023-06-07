@@ -23,7 +23,9 @@ st.title("ACM AI Projects- Spring '23- Team 1")
 
 st.sidebar.success("Want to learn more about our project?")
 
-image1 = Image.open('./img/mbti1.jpg')
+path = os.path.dirname(__file__)
+mbti1 = path+'/img/mbti1.jpg'
+image1 = Image.open(mbti1)
 
 st.markdown(
     """
