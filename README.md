@@ -1,4 +1,4 @@
-![](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/MBTI_Predictor.png)
+[<img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/src/img/MBTI_Predictor.png?raw=true">](https://yashilvora19-acmapp-srcapp-1wg4x0.streamlit.app/)
 (click the picture to access our website!)
 # MBTI Classification from Tweets
 
@@ -25,7 +25,7 @@ MBTI, or Myers-Briggs Type Indicator, is a way to classy different personality t
 
 We decided to use the [MBTI Personality Type Twitter Dataset](https://www.kaggle.com/datasets/mazlumi/mbti-personality-type-twitter-dataset) from Kaggle as our data for our model. The dataset has almost 8000 values and contains tweets and their corresponding MBTI.
 
-![image](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/Original_Dataset.png)
+![image](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/src/img/Original_Dataset.png)
 *Original Dataset* <br /> <br />
 
 ## 3. Structure
@@ -45,7 +45,11 @@ Note: the package versions listed in requirements.txt and imported in the code m
 * cleantext
 * textblob
 * transformers
-* (to add)
+* streamlit
+* plotly
+* gibberish-detector
+* googletrans
+* torchdata
 
 ## 5. Technologies Used
 
@@ -59,7 +63,7 @@ Since our project requires us to analyze tweets, the text in our dataset include
 We also realized that some of the tweets weren’t in English. This created problems with how we were tokenizing the text, so we had to decide between translating all of the non-English tweets into English, or deleting all of the non-English tweets. After we plotted the distribution of the language that all the tweets are in, we saw that the vast majority of the tweets are in English. As a result, we thought it would be best to remove all of the non-English tweets from our dataset.
 
 <p align="center">
-  <img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/img/Language_Distribution.png"><br>
+  <img src="https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/src/img/Language_Distribution.png"><br>
   <i>Distribution of Languages</i>
 </p>
 
@@ -67,10 +71,10 @@ Another hurdle we faced was figuring out how to train our model. We had trouble 
 
 ## 7. Author Info
 
-- Vincent Tu (Advisor):            [LinkedIn](https://www.linkedin.com/in/vincent-tu-422b18208/) | [GitHub](https://github.com/alckasoc)
-- Kevin Shen
-- Yashil Vora
-- Samuel Lee
-- Vanessa Hu
-- Chi Wong
+- Vincent Tu (Advisor): [LinkedIn](https://www.linkedin.com/in/vincent-tu-422b18208/) | [GitHub](https://github.com/alckasoc)
+- Kevin Shen: [LinkedIn](https://www.linkedin.com/in/vincent-tu-422b18208/) | [GitHub](https://github.com/alckasoc)
+- Yashil Vora: [LinkedIn](https://www.linkedin.com/in/vincent-tu-422b18208/) | [GitHub](https://github.com/alckasoc)
+- Samuel Lee: [LinkedIn](https://www.linkedin.com/in/lee-samuel-b22653258/) | [GitHub](https://github.com/samuellee77)
+- Vanessa Hu: [LinkedIn](https://www.linkedin.com/in/vincent-tu-422b18208/) | [GitHub](https://github.com/alckasoc)
+- Chi Wong: [LinkedIn](https://www.linkedin.com/in/vincent-tu-422b18208/) | [GitHub](https://github.com/alckasoc)
 
