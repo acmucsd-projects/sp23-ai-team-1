@@ -8,6 +8,9 @@ from transformers import BertTokenizerFast
 from torch import nn
 from PIL import Image
 import os
+import gc 
+import torch
+
 
 
 # RUN THE FILE- 
@@ -93,3 +96,7 @@ if clicked:
 
     st.bar_chart(df, x="type", y="prob")
     st.balloons()
+
+    del user_input
+    torch.cuda.empty_cache()
+    gc.collect()
