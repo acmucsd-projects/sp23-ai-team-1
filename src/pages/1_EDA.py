@@ -6,7 +6,7 @@ from PIL import Image
 
 st.set_page_config(page_icon="🔎")
 
-df = pd.read_csv("./data/twitter_MBTI.csv")
+df = pd.read_csv("../data/twitter_MBTI.csv")
 description = df.describe()
 df = df[["text", "label"]]
 

@@ -1,23 +1,30 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
+import plotly.figure_factory as ff
 import torch
+from model import BERTWithClassifierHead
 from transformers import BertTokenizerFast
 from torch import nn
 from PIL import Image
 
-from model import BERTWithClassifierHead
 
 # RUN THE FILE- 
 # python -m streamlit run app.py
 # streamlit run app.py
 
-st.set_page_config(page_icon="🏠")
+st.set_page_config(
+    page_title="Welcome to our app!"
+)
+
 st.sidebar.header("Our Model")
+
+st.title("ACM AI Projects- Spring '23- Team 1")
+
 st.sidebar.success("Want to learn more about our project?")
 
 image1 = Image.open('./img/mbti1.jpg')
 
-st.title("ACM AI Projects- Spring '23- Team 1")
 st.markdown(
     """
     The MBTI Personality Test is a popular test used to determine someone's 
@@ -37,7 +44,7 @@ st.markdown(
     ### Test Our Model
     """
 )
-text = st.text_area("Input Tweet")
+text = st.text_area("Input tweet")
 
 clicked = st.button('Generate MBTI Personality')
 
@@ -48,7 +55,7 @@ labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj'
 def load_model():
     tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
     model = BERTWithClassifierHead(num_classes=16)
-    model.load_state_dict(torch.load('./models/mbti.pth', map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load('../models/mbti.pth', map_location=torch.device('cpu')))
     return model, tokenizer
 
 model, tokenizer = load_model()
@@ -63,30 +70,18 @@ if clicked:
     out = model(res)
     scaled = m(out)
     prediction = torch.argmax(scaled)
-    # st.write(labels[prediction])
-
-    image2 = Image.open('./img/mbti2.jpeg')
-
-    st.markdown(
-        """
-        ### Results
-        """
-    )
-
-    st.image(image2)
-
+    st.write(labels[prediction])
     st.success("Data processed successfully! Here's your personality type: " + labels[prediction])
+
 
     df = pd.DataFrame()
     scaled = scaled[0].detach().numpy()
-    df["Label"] = labels
-    df["Probability"] = scaled
+    df["type"] = labels
+    df["prob"] = scaled
 
-    st.markdown(
-        """
-        ### Prediction Probabilities Breakdown
-        """
-    )
+    image2 = Image.open('./img/mbti2.jpeg')
 
-    st.bar_chart(df, x="Label", y="Probability")
+    st.image(image2, caption='What your personality means')
+
+    st.bar_chart(df, x="type", y="prob")
     st.balloons()
