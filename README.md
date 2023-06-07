@@ -9,17 +9,17 @@
 
 
 ## Table of Contents:
-[1. Background and Motivation](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background-and-motivation)
-[2. Dataset](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-dataset)
-[3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)
-[4. Requirements for Use](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)
-[5. Technologies Used](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-technologies-used)
-[6. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)
+[1. Background and Motivation](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#1-background-and-motivation)<br />
+[2. Dataset](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#2-dataset)<br />
+[3. Structure](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#3-structure)<br />
+[4. Requirements for Use](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#4-requirements-for-use)<br />
+[5. Technologies Used](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-technologies-used)<br />
+[6. Difficulties](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#5-difficulties)<br />
 [7. Author Info](https://github.com/acmucsd-projects/sp23-ai-team-1/blob/main/README.md#6-author-info)
 
 ## 1. Background and Motivation
 
-MBTI, or Myers-Briggs Type Indicator, is a way to classy different personality types based on four categories: introversion(I)/extraversion(E), sensing(S)/intuition(N), thinking(T)/feeling(F), and judging(J)/perceiving(P). Every person has a combination of four letters that determines their personality types, and there are a total of 16 personality types. The [MBTI test](https://www.16personalities.com) usually takes at least 10 to 15 minutes to complete. Due to the the long and tedious process that it takes to finish the test, we wanted to create something that can determine someone's personality in a much quicker manner. As a result, we decided to create a model that can predict a person’s MBTI based on their tweets. This process takes just a fraction of the time as compared to the original MBTI test, which allows users to figure out their personality more efficiently. 
+MBTI, or Myers-Briggs Type Indicator, is a way to classy different personality types based on four categories: introversion(I)/extraversion(E), sensing(S)/intuition(N), thinking(T)/feeling(F), and judging(J)/perceiving(P). Every person has a combination of four letters that determines their personality types, and there are a total of 16 personality types. The [MBTI test](https://www.16personalities.com) usually takes at least 10 to 15 minutes to complete. Due to the the long and tedious process that it takes to finish the test, we wanted to create something that can determine someone's personality in a much quicker manner. As a result, we decided to create a model that can predict a person’s MBTI based on their tweets. This process takes just a fraction of the time as compared to the original MBTI test, which allows users to figure out their personality more efficiently. Personality tests are a popular way for people to get to know each other and make new friends. With people still sufferring frm the effects of social distancing and quarantining, we thought that creating a personality rtest will help others meet people better and serve as an icebreaker.
 
 ## 2. Dataset
 
