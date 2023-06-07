@@ -7,6 +7,7 @@ from model import BERTWithClassifierHead
 from transformers import BertTokenizerFast
 from torch import nn
 from PIL import Image
+import os
 
 
 # RUN THE FILE- 
@@ -23,7 +24,9 @@ st.title("ACM AI Projects- Spring '23- Team 1")
 
 st.sidebar.success("Want to learn more about our project?")
 
-image1 = Image.open('./img/mbti1.jpg')
+path = os.path.dirname(__file__)
+mbti1 = path+'/img/mbti1.jpg'
+image1 = Image.open(mbti1)
 
 st.markdown(
     """
@@ -55,7 +58,11 @@ labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj'
 def load_model():
     tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
     model = BERTWithClassifierHead(num_classes=16)
-    model.load_state_dict(torch.load('../models/mbti.pth', map_location=torch.device('cpu')))
+    
+    
+    mbti_model = path+'/mbti.pth'
+    
+    model.load_state_dict(torch.load(mbti_model, map_location=torch.device('cpu')))
     return model, tokenizer
 
 model, tokenizer = load_model()
@@ -78,8 +85,9 @@ if clicked:
     scaled = scaled[0].detach().numpy()
     df["type"] = labels
     df["prob"] = scaled
-
-    image2 = Image.open('./img/mbti2.jpeg')
+    
+    mbti2 = path+'/img/mbti2.jpeg'
+    image2 = Image.open(mbti2)
 
     st.image(image2, caption='What your personality means')
 
