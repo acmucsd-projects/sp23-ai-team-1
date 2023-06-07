@@ -8,9 +8,7 @@ from transformers import BertTokenizerFast
 from torch import nn
 from PIL import Image
 import os
-import gc 
-import torch
-
+import gc
 
 
 # RUN THE FILE- 
