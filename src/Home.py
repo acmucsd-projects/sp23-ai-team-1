@@ -58,7 +58,11 @@ labels = ['intj', 'intp', 'entj', 'entp', 'infj', 'infp', 'enfj', 'enfp', 'istj'
 def load_model():
     tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
     model = BERTWithClassifierHead(num_classes=16)
-    model.load_state_dict(torch.load('../models/mbti.pth', map_location=torch.device('cpu')))
+    
+    
+    mbti_model = path+'/mbti.pth'
+    
+    model.load_state_dict(torch.load(mbti_model, map_location=torch.device('cpu')))
     return model, tokenizer
 
 model, tokenizer = load_model()
